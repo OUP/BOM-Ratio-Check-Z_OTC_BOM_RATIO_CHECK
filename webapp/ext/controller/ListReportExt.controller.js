@@ -39,6 +39,13 @@ sap.ui.define([], function () {
           for (let i = aColumns.length; i >= 0; i--) {
             oTpc.doAutoResizeColumn(i);
           }
+
+          // set column width
+          aColumns[0].setWidth("150px"); // pack
+          aColumns[8].setWidth("150px"); // component
+          aColumns[9].setWidth("350px"); // component description
+          aColumns[11].setWidth("150px"); // common code
+          aColumns[12].setWidth("200px"); // common code description
         }
       },
     };
